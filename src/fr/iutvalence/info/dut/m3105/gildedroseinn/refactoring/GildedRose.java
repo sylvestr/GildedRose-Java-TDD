@@ -20,13 +20,13 @@ public class GildedRose
 	public static void updateItems(List<Item> items)
 	{
 		for (int indexInItemList = 0; indexInItemList < items.size(); indexInItemList++)
-			updateItem(items.get(indexInItemList));
+			updateItemEachDay(items.get(indexInItemList));
 	}
 
-	public static void updateItem(Item item)
+	public static void updateItemEachDay(Item item)
 	{	
-		
-		
+		item.setQuality(item.getQuality()-1);
+		item.setSellIn(item.getSellIn()-1);	
 	}
 
 }
