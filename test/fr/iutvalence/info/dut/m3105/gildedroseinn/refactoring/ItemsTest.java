@@ -52,7 +52,6 @@ public class ItemsTest {
 		item.setQuality(15);
 		assertEquals(item.getQuality(),15);
 	}
-	
 
 	
 }
